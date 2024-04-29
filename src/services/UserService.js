@@ -1,8 +1,8 @@
-import axios from "axios";
+import axios from "./custom-axios";
 
 const fetchAllUser = () => {
     return (
-        axios.get("http://127.0.0.1:8000/api/users/")
+        axios.get("/api/users/")
     )
 }
 

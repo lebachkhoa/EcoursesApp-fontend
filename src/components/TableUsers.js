@@ -15,7 +15,7 @@ const TableUsers = (props) => {
     const getUsers = async () => {
         try {
             let response = await fetchAllUser();
-            setlistUser(response.data.results);
+            setlistUser(response);
         } catch(error) {
             console.error("Error fetching data: ", error);
         }
